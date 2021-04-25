@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;900&display=swap');
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 1%;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    list-style-type: none;
+    padding-left: 1rem;
+}
+a, p{
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.apps img{
+    height: 20px;
+    padding: 8px;
+}
+.apps:hover{
+    background-color: rgba(221, 221, 221, 0.432);
+    border-radius: 100%;
+}
+.apps:hover .placehold{
+    display: block;
+}
+
+main, .apps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+}
+.placehold{
+    position: absolute;
+    margin-top: 40px;
+    display: none;
+    background-color: rgb(36, 36, 36);
+    color: rgb(231, 231, 231);
+    padding: 5px;
+    border-radius: 5%;
+}
+.login{
+    background-color: rgb(22, 72, 238);
+    padding: 7px 30px;
+    margin-right: 1rem;
+    border-radius: 5%;
+    color: white;
+    font-weight: 900;
+}
+.login:hover{
+    cursor: pointer;
+    background-color: rgb(30, 82, 253);
+}
+main{
+    height: 80%;
+}
+
+#searchbar{
+    width: 500px;
+    
+}
+@media screen and (max-width: 600px) {
+    #searchbar{
+        width: 80vw;
+    }
+}
+#sbar{
+    width: 100%;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 25px;
+    height: 2rem;
+    padding-left: 10px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 20%;
+}
+
+.buttons input{
+    background-color: rgb(241, 241, 241);
+    border: 1px solid rgb(241, 241, 241);;
+    padding: 0.5rem 2rem;
+}
+
+.buttons input:hover{
+    cursor: pointer;
+    border: 1px solid rgb(185, 185, 185);
+}
+
+footer{
+    position: relative;
+    bottom: -3.2%;
+}
+#footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(185, 185, 185);
+}
+.footer1, .footer2{
+    display: flex;
+}
+.footer2 a{
+    margin-left: 2rem;
+}
+.footer1 a{
+    margin-right: 2rem;
+}
+.foot{
+    padding: 1.2rem;
+    background-color: rgb(241, 241, 241);
+}
